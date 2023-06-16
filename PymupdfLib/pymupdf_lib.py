@@ -28,7 +28,7 @@ def extract_text_from_pdf(pdf_path: str, page_numbers: list, output_file: str) -
 def main():
     # ページのテキストを抽出して保存
     texts = extract_text_from_pdf(
-        pdf_path='1912.06218.pdf',
+        pdf_path='your_pdf_path',
         page_numbers=[0],
         output_file='output.txt')
     print(texts)
