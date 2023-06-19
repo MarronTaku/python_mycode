@@ -23,13 +23,21 @@ def load_setting():
         pass
 
 def translate(source: str):
+    """翻訳
+
+    Args:
+        source (str): 翻訳元のテキスト
+    
+    Returns:
+        result (str): 翻訳結果のテキスト
+    """
     translator = deepl.Translator(auth_key=master_data["auth_key"])
     result = translator.translate_text(
         source,
         source_lang=master_data["source_lang"],
         target_lang=master_data["target_lang"])
     
-    print(result)
+    return result
 
 def main():
     load_setting()
