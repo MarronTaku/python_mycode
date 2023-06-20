@@ -28,8 +28,8 @@ def extract_text_from_pdf(pdf_path: str, page_numbers: list, output_file: str) -
 def main():
     # ページのテキストを抽出して保存
     texts = extract_text_from_pdf(
-        pdf_path='your_pdf_path',
-        page_numbers=[0],
+        pdf_path='ROBOMECH2023_poster_okuya.pdf',
+        page_numbers=[0, 1],
         output_file='output.txt')
     print(texts)
 
