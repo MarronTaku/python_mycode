@@ -52,7 +52,6 @@ def main():
     master_data = load_setting()
     data = get_notiondb_info(master_data=master_data)
     url = get_url_from_data(data)
-    print(url)
     get_pdf_from_url(url)
 
 if __name__ == "__main__":
